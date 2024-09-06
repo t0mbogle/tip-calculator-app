@@ -1,9 +1,13 @@
 import './App.css'
+import SelectTip from './components/SelectTip'
 
 function App() {
 
   return (
-    'Bill'
+    <>
+      'Bill'
+      <SelectTip />
+    </>
   )
 }
 

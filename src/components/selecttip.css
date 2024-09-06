@@ -1,0 +1,26 @@
+.tip-wrapper {
+    text-align: left;
+    font-size: 12px;
+    color: hsl(184, 14%, 56%);
+}
+
+.tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.custom-input {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    outline-color: hsl(172, 67%, 45%);
+    caret-color: hsl(172, 67%, 45%);
+    width: 45%;
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: end;
+    font-size: 24px;
+    margin: 6px;
+    padding: 0px 15px 0px 0px;
+}

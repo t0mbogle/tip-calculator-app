@@ -1,0 +1,21 @@
+.tip-button {
+    font-size: 24px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    border: 0;
+    width: 45%;
+    margin: 6px;
+    padding: 5px 15px;
+}
+
+.tip-button:focus {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+/* - Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%) */
