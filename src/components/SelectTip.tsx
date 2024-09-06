@@ -1,6 +1,5 @@
-// import React from "react";
 import Tip from "./Tip"
-import './selecttip.css'
+import '../styles/selecttip.css'
 
 const SelectTip = () => {
 

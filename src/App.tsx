@@ -1,4 +1,4 @@
-import './App.css'
+import './styles/App.css'
 import SelectTip from './components/SelectTip'
 
 function App() {

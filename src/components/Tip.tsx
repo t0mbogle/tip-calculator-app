@@ -1,4 +1,4 @@
-import './tip.css'
+import '../styles/tip.css'
 
 const Tip = ({ value }: { value: string }) => {
     return (
