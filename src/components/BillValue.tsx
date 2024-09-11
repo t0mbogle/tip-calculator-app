@@ -1,5 +1,5 @@
 import { ChangeEvent, useContext } from "react"
-import BillContext from "./Context/BillContext"
+import BillContext from "../utils/BillContext"
 
 const BillValue = () => {
   const { tip, amount, setAmount } = useContext(BillContext)

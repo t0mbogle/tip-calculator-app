@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import '../styles/tip.css'
-import BillContext from './Context/BillContext'
+import BillContext from '../utils/BillContext'
 
 const Tip = ({ value }: { value: string }) => {
     const context = useContext(BillContext);
