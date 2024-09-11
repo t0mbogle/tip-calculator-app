@@ -1,9 +1,10 @@
 import './styles/App.css'
 import SelectTip from './components/SelectTip'
-import { useState } from "react";
-import BillContext from './utils/BillContext';
-import BillValue from './components/BillValue';
-import People from './components/People';
+import { useState } from 'react'
+import BillContext from './utils/BillContext'
+import BillValue from './components/BillValue'
+import People from './components/People'
+import Result from './components/Result'
 
 function App() {
   const [amount, setAmount] = useState<string | null>(null);
@@ -16,6 +17,7 @@ function App() {
         <BillValue />
         <SelectTip />
         <People />
+        <Result />
       </BillContext.Provider>
     </>
   )
