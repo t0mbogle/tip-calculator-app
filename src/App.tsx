@@ -7,9 +7,9 @@ import People from './components/People'
 import Result from './components/Result'
 
 function App() {
-  const [amount, setAmount] = useState<string | null>(null);
+  const [amount, setAmount] = useState<string>('')
   const [tip, setTip] = useState<string | null>(null);
-  const [people, setPeople] = useState<string | null>(null);
+  const [people, setPeople] = useState<string>('');
 
   return (
     <>

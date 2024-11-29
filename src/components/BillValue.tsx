@@ -2,7 +2,7 @@ import { ChangeEvent, useContext } from "react"
 import BillContext from "../utils/BillContext"
 
 const BillValue = () => {
-  const { setAmount } = useContext(BillContext)
+  const { amount, setAmount } = useContext(BillContext)
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setAmount(e.target.value)
@@ -10,7 +10,7 @@ const BillValue = () => {
 
   return (
     <>
-      <input type="number" onChange={handleChange} placeholder="Custom"></input>
+      <input type="text" value={amount} onChange={handleChange} placeholder="Custom"></input>
     </>
   )
 }

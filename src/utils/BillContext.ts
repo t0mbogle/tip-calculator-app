@@ -1,21 +1,21 @@
-import React, { createContext } from "react";
+import React, { createContext } from "react"
 
 export type BillContextType = {
-  amount: string | null
+  amount: string
   tip: string | null
-  people: string | null
-  setAmount: React.Dispatch<React.SetStateAction<string | null>>;
-  setTip: React.Dispatch<React.SetStateAction<string | null>>;
-  setPeople: React.Dispatch<React.SetStateAction<string | null>>;
+  people: string
+  setAmount: React.Dispatch<React.SetStateAction<string>>
+  setTip: React.Dispatch<React.SetStateAction<string | null>>
+  setPeople: React.Dispatch<React.SetStateAction<string>>
 };
 
 const BillContext = createContext<BillContextType>({
-  amount: null,
+  amount: '',
   tip: null,
-  people: null,
+  people: '',
   setAmount: () => {},
   setTip: () => {},
-  setPeople: () => {},
-});
+  setPeople: () => {}
+})
 
-export default BillContext;
+export default BillContext

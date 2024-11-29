@@ -5,9 +5,9 @@ const Result = () => {
   const { amount, tip, people, setAmount, setTip, setPeople } = useContext(BillContext)
 
   const clearFullBill = () => {
-    setAmount(null);
+    setAmount('');
     setTip(null);
-    setPeople(null);
+    setPeople('');
   }
 
   return (
@@ -29,6 +29,7 @@ const Result = () => {
       </span>
 
       <button onClick={clearFullBill}>RESET</button>
+      <p>amount: {amount}, tip: {tip}, people {people}</p>
     </>
   )
 }
