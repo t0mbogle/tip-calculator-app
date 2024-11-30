@@ -1,0 +1,16 @@
+.result-wrapper {
+  border-radius: 10px;
+  background-color: hsl(183, 100%, 15%);
+  margin: 6px;
+  padding: 10px 15px 15px 15px;
+}
+
+.result-wrapper > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-wrapper > span > div {
+  text-align: left;
+}
