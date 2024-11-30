@@ -29,7 +29,7 @@ const Result = () => {
       </span>
 
       <button onClick={clearFullBill}>RESET</button>
-      <p>amount: {amount}, tip: {tip}, people {people}</p>
+      <p>amount: {amount}, tip: {tip}, people: {people}</p>
     </>
   )
 }

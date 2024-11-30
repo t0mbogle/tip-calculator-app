@@ -1,6 +1,10 @@
 .tip-wrapper {
     text-align: left;
     font-size: 12px;
+}
+
+h2 {
+    margin-left: 12px;
     color: hsl(184, 14%, 56%);
 }
 
