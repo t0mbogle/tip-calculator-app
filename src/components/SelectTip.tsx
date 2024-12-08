@@ -5,11 +5,16 @@ import { ChangeEvent, useContext } from "react"
 
 const SelectTip = () => {
     const context = useContext(BillContext)
-    const { setTip } = context
+    const { tip, setTip } = context
+
+    const clearField = (e: ChangeEvent<HTMLInputElement>) => {
+        e.preventDefault()
+        return null
+    }
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         setTip(e.target.value)
-      }
+    }
 
     return (
         <>
@@ -21,7 +26,7 @@ const SelectTip = () => {
                 <Tip value={"15%"} />
                 <Tip value={"25%"} />
                 <Tip value={"50%"} />
-                <input className="custom-input" placeholder="Custom" type="datetime" maxLength={2} onChange={handleChange}></input>
+                <input className="custom-input" placeholder="Custom" type="datetime" maxLength={2} onChange={!tip ? clearField : handleChange}></input>
             </span>
         </div>
         </>

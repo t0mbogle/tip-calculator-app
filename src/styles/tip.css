@@ -7,7 +7,17 @@
     margin: 6px;
     padding: 5px 15px;
 }
-.tip-button:focus {
+.tip-button:hover {
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%);
+}
+.tip-button-selected {
+    font-size: 24px;
+    border-radius: 5px;
+    border: 0;
+    width: 45%;
+    margin: 6px;
+    padding: 5px 15px;
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }

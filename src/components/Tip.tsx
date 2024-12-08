@@ -4,11 +4,11 @@ import BillContext from '../utils/BillContext'
 
 const Tip = ({ value }: { value: string }) => {
     const context = useContext(BillContext);
-    const { setTip } = context
+    const { tip, setTip } = context
 
     return (
         <>
-            <button className="tip-button" onClick={() => setTip(value)}>
+            <button className={value === tip ? `tip-button-selected` : `tip-button`} onClick={() => setTip(value)}>
                 {value}
             </button>
         </>

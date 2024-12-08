@@ -4,7 +4,7 @@
 }
 
 h2 {
-    margin-left: 12px;
+    margin: 12px;
     color: hsl(184, 14%, 56%);
 }
 
@@ -27,4 +27,8 @@ h2 {
     font-size: 24px;
     margin: 6px;
     padding: 0px 15px 0px 0px;
+}
+.custom-input:hover {
+    border: 2px solid hsl(172, 67%, 45%);
+    /* border-color: hsl(172, 67%, 45%);  */
 }
