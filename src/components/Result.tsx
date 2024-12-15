@@ -8,7 +8,7 @@ const Result = () => {
 
   const clearFullBill = () => {
     setAmount('');
-    setTip(null);
+    setTip('');
     setPeople('');
   }
 

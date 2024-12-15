@@ -1,18 +1,16 @@
 import Tip from "./Tip"
 import '../styles/selecttip.css'
 import BillContext from "../utils/BillContext"
-import { ChangeEvent, useContext } from "react"
+import { ChangeEvent, useContext, useState } from "react"
 
 const SelectTip = () => {
     const context = useContext(BillContext)
     const { tip, setTip } = context
 
-    const clearField = (e: ChangeEvent<HTMLInputElement>) => {
-        e.preventDefault()
-        return null
-    }
+    const [custom, setCustom] = useState('')
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setCustom(e.target.value)
         setTip(e.target.value)
     }
 
@@ -21,12 +19,12 @@ const SelectTip = () => {
         <div className="tip-wrapper">
             <h2>Select Tip %</h2>
             <span className="tips">
-                <Tip value={"5%"} />
-                <Tip value={"10%"} />
-                <Tip value={"15%"} />
-                <Tip value={"25%"} />
-                <Tip value={"50%"} />
-                <input className="custom-input" placeholder="Custom" type="datetime" maxLength={2} onChange={!tip ? clearField : handleChange}></input>
+                <Tip value={"5%"} setCustom={setCustom} />
+                <Tip value={"10%"} setCustom={setCustom} />
+                <Tip value={"15%"} setCustom={setCustom} />
+                <Tip value={"25%"} setCustom={setCustom} />
+                <Tip value={"50%"} setCustom={setCustom} />
+                <input className="custom-input" placeholder="Custom" type="datetime" maxLength={2} value={custom && tip ? custom : ''} onChange={handleChange}></input>
             </span>
         </div>
         </>
