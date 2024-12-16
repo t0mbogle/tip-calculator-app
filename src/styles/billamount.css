@@ -3,12 +3,32 @@
   text-align: left;
 }
 
+.bill-input-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* error styling */
+.text-error {
+  color: hsl(15, 31%, 58%);
+}
+.bill-input-error {
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  border: solid 2px hsl(15, 31%, 58%);
+  border-radius: 5px;
+}
+
 .bill-input {
   background-color: hsl(189, 41%, 97%);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
+  border: solid 2px hsl(189, 41%, 97%);
   border-radius: 5px;
 }
 
