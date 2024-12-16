@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import BillContext from '../utils/BillContext'
-// import <DollarIcon></DollarIcon>
 import '../styles/result.css'
 
 const Result = () => {
@@ -48,9 +47,6 @@ const Result = () => {
               </>)}
           </p>
         </span>
-
-        {/* <DollarIcon /> */}
-
         <button className='reset-button' onClick={clearFullBill}>RESET</button>
       </div>
     </>
