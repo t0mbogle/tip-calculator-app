@@ -10,8 +10,11 @@ const SelectTip = () => {
     const [custom, setCustom] = useState('')
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setCustom(e.target.value)
-        setTip(e.target.value)
+        const input = e.target.value
+        if (input.length <= 2) {
+            setCustom(e.target.value)
+            setTip(e.target.value)
+        }
     }
 
     return (
@@ -24,7 +27,13 @@ const SelectTip = () => {
                 <Tip value={"15%"} setCustom={setCustom} />
                 <Tip value={"25%"} setCustom={setCustom} />
                 <Tip value={"50%"} setCustom={setCustom} />
-                <input className="custom-input" placeholder="Custom" type="datetime" maxLength={2} value={custom && tip ? custom : ''} onChange={handleChange}></input>
+                <input className="custom-input" 
+                    placeholder="Custom" 
+                    type="number" 
+                    maxLength={2} 
+                    value={custom && tip ? custom : ''} 
+                    onChange={handleChange}>
+                </input>
             </span>
         </div>
         </>

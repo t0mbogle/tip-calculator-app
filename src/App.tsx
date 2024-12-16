@@ -2,9 +2,9 @@ import './styles/App.css'
 import SelectTip from './components/SelectTip'
 import { useState } from 'react'
 import BillContext from './utils/BillContext'
-import BillValue from './components/BillAmount'
 import People from './components/People'
 import Result from './components/Result'
+import BillAmount from './components/BillAmount'
 
 function App() {
   const [amount, setAmount] = useState<string>('')
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <BillContext.Provider value={{ amount, setAmount, tip, setTip, people, setPeople }}>
-        <BillValue />
+        <BillAmount />
         <SelectTip />
         <People />
         <Result />
