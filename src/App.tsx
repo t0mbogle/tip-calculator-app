@@ -13,12 +13,17 @@ function App() {
 
   return (
     <>
-      <BillContext.Provider value={{ amount, setAmount, tip, setTip, people, setPeople }}>
-        <BillAmount />
-        <SelectTip />
-        <People />
-        <Result />
-      </BillContext.Provider>
+      <div className='app-title'>
+        <h1>SPLITTER</h1>
+      </div>
+      <div className='app-content'>
+        <BillContext.Provider value={{ amount, setAmount, tip, setTip, people, setPeople }}>
+          <BillAmount />
+          <SelectTip />
+          <People />
+          <Result />
+        </BillContext.Provider>
+      </div>
     </>
   )
 }

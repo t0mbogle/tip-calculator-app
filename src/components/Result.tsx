@@ -54,7 +54,7 @@ const Result = () => {
               </>}
           </p>
         </span>
-        {isBillValid() ? <button className={'reset-button'} onClick={clearFullBill}>RESET</button> 
+        {amount || tip || people ? <button className={'reset-button'} onClick={clearFullBill}>RESET</button> 
         : <button className={'reset-button'} disabled>RESET</button>}
       </div>
     </>
