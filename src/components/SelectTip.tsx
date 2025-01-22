@@ -20,7 +20,9 @@ const SelectTip = () => {
     return (
         <>
         <div className="tip-wrapper">
-            <h2>Select Tip %</h2>
+            <div className="tip-input-header">
+                <p>Select Tip %</p>
+            </div>
             <span className="tips">
                 <Tip value={"5%"} setCustom={setCustom} />
                 <Tip value={"10%"} setCustom={setCustom} />
@@ -32,6 +34,7 @@ const SelectTip = () => {
                     type="number" 
                     maxLength={2} 
                     value={custom && tip ? custom : ''} 
+                    onWheel={(e) => (e.target as HTMLElement).blur()}
                     onChange={handleChange}>
                 </input>
             </span>

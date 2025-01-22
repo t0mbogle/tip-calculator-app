@@ -11,6 +11,8 @@ input::-webkit-inner-spin-button {
 }
 
 .app-title {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   height: 18vh;
   z-index: -1;
@@ -21,13 +23,15 @@ input::-webkit-inner-spin-button {
   color: hsl(183, 80%, 24%);
   justify-content: center;
 }
-.app-title h1 {
-  text-align: center;
+.app-title p {
+  margin: 0;
+  text-align: right;
   width: 25%;
   word-wrap: break-word;
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: 10px;
+  color: hsl(183, 100%, 15%);
 }
 
 .app-content {
