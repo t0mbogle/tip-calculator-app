@@ -19,10 +19,14 @@ function App() {
       </div>
       <div className='app-content'>
         <BillContext.Provider value={{ amount, setAmount, tip, setTip, people, setPeople }}>
-          <BillAmount />
-          <SelectTip />
-          <People />
-          <Result />
+          <div className='app-calc-bill'>
+            <BillAmount />
+            <SelectTip />
+            <People />
+          </div>
+          <div className='app-result-bill'>
+            <Result />
+          </div>
         </BillContext.Provider>
       </div>
     </>
