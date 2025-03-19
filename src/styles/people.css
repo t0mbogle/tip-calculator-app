@@ -35,6 +35,9 @@
   border: solid 2px hsl(172, 67%, 45%);
   -ms-progress-appearance: none;
 }
+.people-input > input {
+  width: 80%;
+}
 
 p {
   color: hsl(184, 14%, 56%);

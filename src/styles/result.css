@@ -5,13 +5,13 @@
   padding: 20px;
 }
 
-.result-wrapper > span {
+.span-result {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.result-wrapper > span > div {
+.span-result > div {
   text-align: left;
 }
 
@@ -41,3 +41,16 @@ span > p > svg path {
   background-color: hsl(183, 80%, 24%);
   color: hsl(183, 100%, 15%);
 }
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  .result-wrapper {
+    height: 100%;
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+  

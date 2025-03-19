@@ -15,18 +15,17 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   position: absolute;
   height: 18vh;
-  z-index: -1;
   width: 100%;
   background-color: hsl(185, 41%, 84%);
   display: flex;
   align-items: center;
   color: hsl(183, 80%, 24%);
   justify-content: center;
+  z-index: -1;
 }
 .app-title p {
   margin: 0;
   text-align: right;
-  width: 25%;
   word-wrap: break-word;
   font-size: 24px;
   line-height: 1.5;
@@ -42,23 +41,31 @@ input::-webkit-inner-spin-button {
   border-radius: 20px 20px 0 0;
 }
 
+.app-result-bill {
+  margin-top: 25px;
+}
+
 /* Desktop View */
 @media screen and (min-width: 768px) {
   #root {
     width: 100vw;
+    padding-left: 12%;
+    padding-right: 12%;
     background-color: hsl(185, 41%, 84%);
-    z-index: -1;
   }
-  .app-title p {
-    text-align: center; 
+  .app-title {
+    width: 76%;
+    z-index: 1;
   }
   .app-content {
-    width: 50vw;
-    margin: 20vh 25vw 0 25vw;
+    height: 60vh;
+    margin-top: 150px;
     display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    border-radius: 20px;
   }
   .app-calc-bill, .app-result-bill {
     width: 50%;
-    padding: 10px 5px 10px 5px;
   }
 }
