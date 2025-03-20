@@ -34,7 +34,7 @@ input::-webkit-inner-spin-button {
 }
 
 .app-content {
-  height: 85vh;
+  height: fit-content;
   margin-top: 15vh;
   padding: 5px 20px 10px 20px;
   background-color: hsl(0, 0%, 100%);
@@ -67,5 +67,8 @@ input::-webkit-inner-spin-button {
   }
   .app-calc-bill, .app-result-bill {
     width: 50%;
+  }
+  .app-result-bill {
+    margin-top: 0;
   }
 }

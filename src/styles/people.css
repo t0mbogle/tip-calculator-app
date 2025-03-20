@@ -23,6 +23,7 @@
 }
 
 .people-input {
+  caret-color: hsl(172, 67%, 45%);
   background-color: hsl(189, 41%, 97%);
   display: flex;
   align-items: center;
@@ -31,9 +32,9 @@
   border: solid 2px hsl(189, 41%, 97%);
   border-radius: 5px;
 }
-.people-input:hover {
+.people-input:focus-within {
   border: solid 2px hsl(172, 67%, 45%);
-  -ms-progress-appearance: none;
+  /* -ms-progress-appearance: none; */
 }
 .people-input > input {
   width: 80%;

@@ -36,6 +36,6 @@
 .custom-input::placeholder {
     color: hsl(186, 14%, 43%);
 }
-.custom-input:hover {
+.custom-input:focus-within {
     border: 2px solid hsl(172, 67%, 45%);
 }

@@ -7,10 +7,7 @@
     margin: 6px;
     padding: 5px 15px;
 }
-.tip-button:hover {
-    background-color: hsl(173, 61%, 77%);
-    color: hsl(183, 100%, 15%);
-}
+
 .tip-button-selected {
     font-size: 24px;
     border-radius: 5px;
@@ -22,3 +19,10 @@
     color: hsl(183, 100%, 15%);
 }
 
+/* Desktop View */
+@media screen and (min-width: 768px) {
+    .tip-button:hover {
+        background-color: hsl(173, 61%, 77%);
+        color: hsl(183, 100%, 15%);
+    }
+}

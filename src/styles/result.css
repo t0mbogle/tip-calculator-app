@@ -52,5 +52,8 @@ span > p > svg path {
     flex-direction: column;
     justify-content: space-between;
   }
+  .reset-button:enabled:hover {
+    background-color: hsl(173, 61%, 77%);
+  }
 }
   

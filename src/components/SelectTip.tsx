@@ -11,7 +11,7 @@ const SelectTip = () => {
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         const input = e.target.value
-        if (input.length <= 2) {
+        if (parseFloat(input) < 100) {
             setCustom(e.target.value)
             setTip(e.target.value)
         }
@@ -31,8 +31,7 @@ const SelectTip = () => {
                 <Tip value={"50%"} setCustom={setCustom} />
                 <input className="custom-input" 
                     placeholder="Custom" 
-                    type="number" 
-                    maxLength={2} 
+                    type="number"
                     value={custom && tip ? custom : ''} 
                     onWheel={(e) => (e.target as HTMLElement).blur()}
                     onChange={handleChange}>

@@ -23,6 +23,7 @@
 }
 
 .bill-input {
+  caret-color: hsl(172, 67%, 45%);
   background-color: hsl(189, 41%, 97%);
   display: flex;
   align-items: center;
@@ -31,7 +32,7 @@
   border: solid 2px hsl(189, 41%, 97%);
   border-radius: 5px;
 }
-.bill-input:hover {
+.bill-input:focus-within {
   border: solid 2px hsl(172, 67%, 45%);
 }
 .bill-input > input {
@@ -52,4 +53,11 @@ input {
 svg {
   align-items: center;
   justify-content: center;
+}
+
+/* Desktop View */
+@media screen and (min-width: 768px) {
+  .bill-wrapper {
+    margin-top: 0;
+  }
 }
