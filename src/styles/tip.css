@@ -1,6 +1,7 @@
 .tip-button {
     font-size: 24px;
     background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
     border-radius: 5px;
     border: 0;
     width: 45%;
