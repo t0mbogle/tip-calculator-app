@@ -14,8 +14,8 @@ function App() {
   return (
     <>
       <div className='app-title'>
-        <p>SPLI</p>
-        <p>TTER</p>
+        <h1>SPLI</h1>
+        <h1>TTER</h1>
       </div>
       <div className='app-content'>
         <BillContext.Provider value={{ amount, setAmount, tip, setTip, people, setPeople }}>

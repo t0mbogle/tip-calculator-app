@@ -1,7 +1,9 @@
 #root {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
-  text-align: center;
-  min-height: inherit;
 }
 
 input::-webkit-outer-spin-button,
@@ -11,19 +13,17 @@ input::-webkit-inner-spin-button {
 }
 
 .app-title {
+  padding: 40px 0px 40px 0px;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  height: 18vh;
   width: 100%;
   background-color: hsl(185, 41%, 84%);
   display: flex;
   align-items: center;
   color: hsl(183, 80%, 24%);
   justify-content: center;
-  z-index: -1;
 }
-.app-title p {
+.app-title h1 {
   margin: 0;
   text-align: right;
   word-wrap: break-word;
@@ -34,11 +34,15 @@ input::-webkit-inner-spin-button {
 }
 
 .app-content {
-  height: fit-content;
-  margin-top: 15vh;
-  padding: 5px 20px 10px 20px;
+  padding: 0px 20px 10px 20px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px 20px 0 0;
+  height: fit-content;
+}
+.app-calc-bill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .app-result-bill {
@@ -49,17 +53,11 @@ input::-webkit-inner-spin-button {
 @media screen and (min-width: 768px) {
   #root {
     width: 100vw;
-    padding-left: 12%;
-    padding-right: 12%;
     background-color: hsl(185, 41%, 84%);
-  }
-  .app-title {
-    width: 76%;
-    z-index: 1;
   }
   .app-content {
     height: 60vh;
-    margin-top: 150px;
+    width: 70vw;
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
